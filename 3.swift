@@ -1,5 +1,5 @@
-//swift練習
-
+//swift learning
+//var と　letの使い方
 var greeting : String = "Hello world"
 print(greeting)
 greeting = "Hello Swift"
