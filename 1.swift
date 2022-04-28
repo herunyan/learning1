@@ -1,4 +1,4 @@
-// 自分の得意な言語で
-// Let's チャレンジ！！
+//swift lerning
+//　使い方
 let input_line=readLine()!
 print(input_line)
