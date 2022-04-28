@@ -1,0 +1,28 @@
+//ATCorder Use C
+
+/*
+Problem
+3 つの数字 x,y,z をこの順に並べてできる 3 桁の整数を xyz と表すことにします。
+どの桁も 0 でない 3 桁の整数 abc が与えられるので、abc+bca+cab を求めてください。
+*/
+
+//Answer
+#include<stdio.h>
+int calculate(int num1, int num2, int num3){
+  int x, y, z;
+  x = 100 * num1 + 10 * num2 + 1 * num3;
+  y = 100 * num2 + 10 * num3 + 1 * num1;
+  z = 100 * num3 + 10 * num1 + 1 * num2;
+  return x + y + z;
+}
+int main(void){
+  int a, b, c, x;
+  scanf("%d", &x);
+  a = x / 100;
+  x = x % 100;
+  b = x / 10;
+  x = x % 10;
+  c = x;
+  printf("%d", calculate(a, b, c));
+  return 0;
+}
